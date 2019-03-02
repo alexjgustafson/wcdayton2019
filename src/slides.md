@@ -135,6 +135,13 @@ https://github.com/lukethacoder/wp-webhook-deploy-netlify
 
 ---
 
+# Let's try a live edit!
+
+- [widget.pet](https://www.widget.pet/)
+- [wp.widget.pet](https://wp.widget.pet/)
+
+---
+
 # Netlify
 
 ![Screenshot of Netlify Dashboard](https://wp.widget.pet/wp-content/uploads/2019/03/Overview___unruffled-williams-d217ff-e1551499156494.jpg)

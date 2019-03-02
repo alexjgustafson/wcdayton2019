@@ -5,7 +5,7 @@
 
 WordCamp Dayton 2019 <br/>
 Alex J. Gustafson <br/>
-wcdayton2019.alexjgustafson.tech <br/>
+[wcdayton2019.alexjgustafson.tech](https://wcdayton2019.alexjgustafson.tech)
 
 ---
 
@@ -68,8 +68,8 @@ The goal is to store our data in a live WordPress site that our Gatsby app can f
 # WordPress
 
 - Hosted anywhere, but the REST API needs to be public
-- Consider using a subdomain
 - WordPress.com or self-hosted WordPress
+- Consider using a subdomain
 - Avoid adding any plugins at first unless their main goal is *data*
 
 ---
@@ -141,23 +141,71 @@ https://github.com/lukethacoder/wp-webhook-deploy-netlify
 
 ---
 
+# Other hosting options
+
+https://www.gatsbyjs.org/docs/deploying-and-hosting/
+
+---
+
 # 3. Getting Started in Gatsby
 
 ---
 
-# Plugins
+# Configuration and Plugins
+
+- Your starter will likely have several plugins already
+- Install new plugins via npm or yarn
+- Edit gatsby-config.js to include the new plugin and any required settings
+
+---
+
+# Configuration and Plugins
+
+gatsby-config.js
+
+![Screenshot of all of gatsby-config.js](https://wp.widget.pet/wp-content/uploads/2019/03/carbon4-1-e1551504570369.png)
+
+---
+
+# Configuration and Plugins
+
+- Most plugins provide a feature that can be used within your React/Gatsby code
+- "Source plugins" fetch data
+- "Transform plugins" change information from source plugins
 
 ---
 
 # GraphQL
 
+A query language that looks an awful lot like JSON but isn't JSON.
+
+---
+
+# GraphQL
+
+page.js
+
+![Screenshot of page.js](https://wp.widget.pet/wp-content/uploads/2019/03/carbon5.png)
+
 ---
 
 # GraphiQL
 
+An IDE for trying out GraphQL queries
+
+---
+
+# GraphiQL
+
+![Screenshot of GraphiQL in action](https://wp.widget.pet/wp-content/uploads/2019/03/GraphiQL-e1551505985746.jpg)
+
 ---
 
 # Unstructured Data
+
+You can ignore GraphQL entirely and use Gatsby's createPages API within gatsby-node.js
+
+[See this great example in the GatsbyJS docs.](https://www.gatsbyjs.org/docs/using-gatsby-without-graphql/)
 
 ---
 
@@ -165,31 +213,43 @@ https://github.com/lukethacoder/wp-webhook-deploy-netlify
 
 With a capital L
 
+`<Link to="/howdy">Howdy</Link>`
+
+---
+
+# React from there on out
+
+For the most part, other than these concepts you can write JSX just like you would in any other React app.
+
+- Components
+- Nested components
+- Modular CSS
+
 ---
 
 # 4. Pros and Cons
 
----
-
-# Pros
+## Pros
 
 - If this sounds more exciting than terrifying, that's the pro
-- Performance first
+- Modern JS tooling built-in
+- No restriction on the _data_ your content creators manage
+- Site visitors receive optimal performance
 
----
+## Cons
 
-# Cons
-
-- Relies on npm/yarn packages more than WordPress plugins
-- Complicated hosting setup
-
+- Doesn't "feel like" WordPress templates
+- More complicated hosting setup
+- WordPress plugins with complicated display can be cumbersome on the Gatsby side
+- Frequency of updates may rule out Gatsby due to rebuild time
 
 ---
 
 # 5. More Advanced Setups to Consider
 
 - WP GraphQL plugin can allow GraphQL queries directly to WP instead of using a transformer
-- Gatsby Themes and ports of WordPress themes  
+- Gatsby Themes and ports of WordPress themes. Checkout [gatsbywpthemes.com](https://gatsbywpthemes.com/)
+- Host your Gatsby App and WP on the same domain, but different ports
 
 ---
 
